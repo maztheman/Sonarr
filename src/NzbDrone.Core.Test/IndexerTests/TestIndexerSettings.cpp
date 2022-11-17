@@ -1,0 +1,1 @@
+#include "TestIndexerSettings.h"

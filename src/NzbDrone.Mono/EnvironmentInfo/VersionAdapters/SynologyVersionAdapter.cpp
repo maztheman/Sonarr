@@ -1,0 +1,1 @@
+#include "SynologyVersionAdapter.h"

@@ -1,0 +1,1 @@
+#include "XbmcMetadata.h"

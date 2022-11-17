@@ -1,0 +1,1 @@
+#include "BasicNamingConfig.h"

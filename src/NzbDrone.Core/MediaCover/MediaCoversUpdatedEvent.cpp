@@ -1,0 +1,1 @@
+#include "MediaCoversUpdatedEvent.h"

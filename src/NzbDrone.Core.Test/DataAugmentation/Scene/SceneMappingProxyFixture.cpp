@@ -1,0 +1,1 @@
+#include "SceneMappingProxyFixture.h"

@@ -1,0 +1,1 @@
+#include "035_add_series_folder_format_to_naming_config.h"

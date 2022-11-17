@@ -1,0 +1,1 @@
+#include "NzbgetGlobalStatus.h"

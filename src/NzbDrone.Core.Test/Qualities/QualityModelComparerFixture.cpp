@@ -1,0 +1,1 @@
+#include "QualityModelComparerFixture.h"

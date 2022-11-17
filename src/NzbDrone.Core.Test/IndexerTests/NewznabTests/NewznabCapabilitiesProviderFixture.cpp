@@ -1,0 +1,1 @@
+#include "NewznabCapabilitiesProviderFixture.h"

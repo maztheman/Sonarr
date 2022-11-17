@@ -1,0 +1,1 @@
+#include "SysTrayApp.h"

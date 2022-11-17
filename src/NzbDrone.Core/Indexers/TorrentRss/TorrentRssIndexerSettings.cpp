@@ -1,0 +1,1 @@
+#include "TorrentRssIndexerSettings.h"

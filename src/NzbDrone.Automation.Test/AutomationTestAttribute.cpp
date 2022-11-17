@@ -1,0 +1,1 @@
+#include "AutomationTestAttribute.h"
