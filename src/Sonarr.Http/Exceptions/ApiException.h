@@ -1,30 +1,26 @@
 #pragma once
 
+#include "DotNet/System/Exception.h"
+#include "DotNet/System/Net/HttpStatusCode.h"
+
 namespace Sonarr::Http::Exceptions
 {
-    enum class HttpStatusCode
-    {
-        NotFound, //404
-        UnsupportedMediaType, //whateva
-        MethodNotAllowed, //304 or something,
-        BadRequest, //
-    };
+    using namespace System::Net;
 
-    inline std::string ToString(HttpStatusCode value)
-    {
-        return "na";
-    }
-
-
-    class ApiException : std::exception
+    class ApiException : System::Exception
     {
     protected:
         
         ApiException(HttpStatusCode statusCode, std::string content = "")
             : m_StatusCode(statusCode)
             , m_Content(content)
-            , std::exception(GetMessage(statusCode, content))
+            , System::Exception(GetMessage(statusCode, content))
         {
+        }
+
+        virtual ~ApiException()
+        {
+            
         }
 
     private:
@@ -34,7 +30,7 @@ namespace Sonarr::Http::Exceptions
 
         static std::string GetMessage(HttpStatusCode statusCode, std::string content)
         {
-            auto result = ToString(statusCode);
+            std::string result = ToString(statusCode).data();
 
             if (!content.empty())
             {

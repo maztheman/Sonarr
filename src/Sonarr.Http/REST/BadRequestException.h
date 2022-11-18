@@ -13,5 +13,10 @@ namespace Sonarr::Http::REST
             : ApiException(HttpStatusCode::BadRequest, content)
         {
         }
-    }
+
+        virtual ~BadRequestException()
+        {
+            
+        }
+    };
 }

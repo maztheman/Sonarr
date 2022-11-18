@@ -35,7 +35,7 @@ namespace Sonarr::Http::REST
     private:
         static std::string ModifyResourceName(const Type& type)
         {
-            std::string retval = type.Name;
+            std::string retval = type.Name.data();
             //replace(retval, "resource", "");
             return retval;
         }

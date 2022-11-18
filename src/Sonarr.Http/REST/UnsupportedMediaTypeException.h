@@ -9,7 +9,7 @@ namespace Sonarr::Http::REST
     {
     public:
         UnsupportedMediaTypeException(std::string_view content = "")
-            : ApiException(Exceptions::HttpStatusCode::UnsupportedMediaType, content)
+            : ApiException(Exceptions::HttpStatusCode::UnsupportedMediaType, content.data())
         {
         }
     };
